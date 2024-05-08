@@ -32,3 +32,5 @@ $(".home-slider").slick({
     },
   ],
 });
+//Slider end
+
