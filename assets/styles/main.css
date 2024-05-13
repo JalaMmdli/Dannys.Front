@@ -1792,24 +1792,44 @@ main #home-restaurant .restaurant-block .container .element-block .multilayers-i
   display: flex;
   padding-bottom: 150px;
 }
+.container .product .product-left-box {
+  position: sticky;
+  top: 0;
+}
+.container .product .product-left-box .cake-img {
+  max-height: 490px;
+  margin: auto;
+  overflow: hidden;
+}
+.container .product .product-left-box .cake-img img {
+  filter: grayscale(0);
+  box-shadow: 0 0 8px rgba(34, 34, 34, 0.16);
+  transition: 0.3s;
+  width: 100%;
+  height: 100%;
+  margin: 2px;
+}
+.container .product .product-left-box .product-main .slider-img {
+  max-width: 500px;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  z-index: 999;
+  opacity: 1;
+  margin: 0 10px;
+  display: block;
+}
+.container .product .product-left-box .product-main .slider-img img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 .container .product .mini-cont {
   padding: 0 20px;
   width: 50%;
   display: flex;
   gap: 30px;
-}
-.container .product .mini-cont .slider-left {
-  display: flex;
-  flex-direction: column;
-  max-height: 543px;
-  overflow: hidden;
-  gap: 10px;
-}
-.container .product .mini-cont .slider-left .additional-file {
-  max-width: 86px;
-}
-.container .product .mini-cont .slider-left .additional-file img {
-  width: 100%;
 }
 .container .product .mini-cont .info h3 {
   font-family: "Poppins", sans-serif;
@@ -1846,14 +1866,14 @@ main #home-restaurant .restaurant-block .container .element-block .multilayers-i
   align-items: center;
 }
 .container .product .mini-cont .info .single-cart input {
-  height: 56px;
+  max-height: 56px;
   border: 2px solid #dfe1dc;
   float: left;
   margin-right: 15px;
   padding: 15px;
 }
 .container .product .mini-cont .info .single-cart .btn-default {
-  height: 56px;
+  max-height: 56px;
   letter-spacing: 1px;
   padding: 18px 40px;
   background-color: #cc9933;
@@ -1930,7 +1950,7 @@ main #home-restaurant .restaurant-block .container .element-block .multilayers-i
   margin-bottom: 15px;
 }
 .container .feedback .cont .tab-content .form-group textarea {
-  height: 174px;
+  max-height: 174px;
   border: 2px solid #dfe1dc;
   background-color: #fff;
   resize: none;
@@ -1947,4 +1967,27 @@ main #home-restaurant .restaurant-block .container .element-block .multilayers-i
   font-weight: 600;
   letter-spacing: 2px;
   text-decoration: none !important;
+}
+
+@media (max-width: 576px) {
+  .content {
+    padding: 20px 0px;
+  }
+  .content .container .product {
+    display: block;
+  }
+  .content .container .mini-cont {
+    width: 100%;
+  }
+  .content .container .mini-cont h3 {
+    font-size: 24px !important;
+    line-height: 30px !important;
+    padding-bottom: 15px !important;
+  }
+  .content .container .feedback .tab-content {
+    padding: 15px;
+  }
+  .content .container .feedback .tab-content h5 {
+    margin-bottom: 20px;
+  }
 }/*# sourceMappingURL=main.css.map */
