@@ -2826,4 +2826,182 @@ body {
   text-align: center;
   padding: 1em;
   border-radius: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white !important;
+}
+
+#News-banner {
+  height: 500px;
+}
+#News-banner .banner-part {
+  min-height: 500px;
+  position: relative;
+  background-image: url(/assets/images/home/reservation-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: scroll;
+}
+#News-banner .banner-part .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Adjust alpha to control darkness */
+}
+#News-banner .banner-part .banner-content {
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#News-banner .banner-part .banner-content h3 {
+  color: #cc9933;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-align: center;
+}
+#News-banner .banner-part .banner-content .bannerTitle {
+  margin: 20px 0px 40px 0px;
+  font-size: 128px;
+  line-height: 86px;
+  font-weight: 400;
+  text-align: center;
+  color: white;
+}
+#News-banner .banner-part .banner-content .connection {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  line-height: 24px;
+  color: #999;
+  margin-bottom: 15px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-align: center;
+  word-break: keep-all !important;
+}
+#News-banner .banner-part .banner-content .connection span {
+  color: #fff;
+}
+#News-banner .banner-part .banner-content .yellow {
+  color: #cc9933;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.content {
+  padding: 90px 0;
+}
+.content .container {
+  box-shadow: none;
+}
+.content .container .row .col-centered {
+  margin: auto;
+}
+.content .container .row h5 {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #333333;
+  margin: 0;
+  text-align: center;
+}
+.content .container .row .dn__contact-form {
+  margin: auto !important;
+}
+.content .container .row .dn__contact-form .row {
+  margin: 0 -32px;
+}
+.content .container .row .dn__contact-form .row .form-group {
+  margin: 0 0 45px;
+}
+.content .container .row .dn__contact-form .row .form-group label {
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 12px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #333333;
+  margin: 0 0 12px;
+}
+.content .container .row .dn__contact-form .row .form-group .form-control {
+  background-color: #efefef;
+  border: none;
+  color: #555;
+  font-size: 14px;
+  line-height: 14px;
+  color: #333;
+  height: 42px;
+  border-radius: 0;
+}
+.content .container .row .dn__contact-form .row .form-group #exampleInputtext3 {
+  height: auto;
+}
+.content .container .row .dn__contact-form .send-message {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.content .container .row .dn__contact-form .send-message .btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+}
+.content .container .row .dn__contact-form .send-message .btn-default {
+  font-family: "Poppins", sans-serif;
+  background-color: #cc9933;
+  border: none;
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 16px 57px 16px 57px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-decoration: none !important;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -ms-border-radius: 0;
+}
+
+@media (max-width: 576px) {
+  #News-banner .banner-part h1 {
+    font-size: 46px !important;
+    line-height: 50px !important;
+  }
+  .container .row {
+    padding: 0 10px;
+  }
+  .container .row .col-centered {
+    padding: 0 !important;
+  }
+  .container .row h5 {
+    margin-bottom: 30px !important;
+  }
+  .container .row .dn__contact-form {
+    padding: 10px 40px !important;
+  }
 }/*# sourceMappingURL=main.css.map */
