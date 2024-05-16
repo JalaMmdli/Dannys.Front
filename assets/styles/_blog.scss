@@ -21,6 +21,10 @@
 //   padding: 0 40px !important;
 //   min-width: 100%;
 // }
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
 #News-banner {
   height: 500px;
 
@@ -62,6 +66,7 @@
       }
 
       h1 {
+        font-family: "Great Vibes";
         margin: 80px 0px 30px 0px;
         font-size: 128px;
         line-height: 86px;
@@ -92,15 +97,16 @@
 #News {
   padding: 100px 0px;
   background-color: #efefef;
- 
-  
+  // margin: auto;
+
   .container {
-    
+    margin: auto;
     .row {
+      display: flex;
+      justify-content: space-between;
       .left-part {
         padding-right: 10px;
         padding-left: 10px;
-     
 
         .all-news {
           overflow-y: auto;
@@ -109,8 +115,6 @@
           margin-right: -20px;
           display: flex;
           flex-wrap: wrap;
-         
-         
           .article {
             float: left;
             padding-bottom: 20px;
@@ -119,17 +123,19 @@
             border-bottom: 2px solid #dfe1dc;
             text-align: center;
             margin: 5px;
-          
+            
 
             .article-header {
               margin-bottom: 25px;
 
               h2 {
+                font-family: "Poppins", sans-serif;
                 font-size: 34px;
                 line-height: 44px;
                 font-weight: 600;
                 margin-top: 0;
                 margin-bottom: 0.3em;
+                text-transform: uppercase;
 
                 a {
                   color: #000;
@@ -187,9 +193,6 @@
       }
 
       .right-part {
-        padding-right: 20px;
-        padding-left: 20px;
-
         .categories-part {
           padding-top: 50px;
           padding-bottom: 60px;
@@ -655,7 +658,6 @@
                   line-height: 12px;
                   color: #000000;
                   display: inline-block;
-                  
 
                   a {
                     font-size: 12px;
