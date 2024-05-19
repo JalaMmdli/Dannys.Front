@@ -1,4 +1,4 @@
-$(".cake-img").slick({
+$(".cake-img-slider").slick({
   vertical: true,
   verticalSwiping: true,
   dots: false,
@@ -7,7 +7,7 @@ $(".cake-img").slick({
   infinite: true,
   speed: 300,
   slidesToShow: 5,
-  slidesToScroll: 1,
+  slidesToScroll: 2,
   responsive: [
     {
       breakpoint: 1024,
@@ -33,9 +33,7 @@ $(".cake-img").slick({
         slidesToScroll: 1,
       },
     },
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
+  
   ],
 });
 
