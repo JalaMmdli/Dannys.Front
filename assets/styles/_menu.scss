@@ -73,15 +73,22 @@
   }
 
   #Menu {
-    padding-top: 100px;
-    padding-right: 35px;
-    padding-bottom: 100px;
-    padding-left: 35px;
+    padding: 100px 35px;
+    width: 100%;
 
     .row {
+      .menu1, .menu2{
+        display: flex;
+        gap: 30px;
+        padding: 0;
+      }
+      .menu2{
+        flex-direction: row-reverse;
+      }
       .menu-left {
         position: relative;
-
+     
+        margin-bottom: 60px ;
         .wrapper-img {
           position: relative;
           overflow: hidden;
@@ -150,8 +157,8 @@
       }
 
       .menu-right {
-        
-   
+       
+   margin-bottom: 60px ;
         .inner-content {
           margin-bottom: 60px;
           margin-top: 0px;
@@ -177,6 +184,7 @@
           ul {
             display: flex;
             flex-wrap: wrap;
+            padding: 0;
 
             li {
               width: 50%;
@@ -252,6 +260,14 @@ a{
 
       .container {
         .row {
+          
+           
+            .menu1 , .menu2{
+              display: flex;
+              // justify-content: flex-end;
+              flex-direction:column-reverse;
+              margin-bottom: 20px;
+            }
           .menu-left {
             // padding: 0px 35px;
 

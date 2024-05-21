@@ -5,15 +5,15 @@ $(".cake-img-slider").slick({
   autoplay: true,
   arrows: false,
   infinite: true,
-  speed: 300,
+  speed: 500,
   slidesToShow: 5,
-  slidesToScroll: 2,
+  slidesToScroll: 1,
   responsive: [
     {
       breakpoint: 1024,
       settings: {
         slidesToShow: 5,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
         infinite: true,
         dots: true,
       },
@@ -22,7 +22,7 @@ $(".cake-img-slider").slick({
       breakpoint: 600,
       settings: {
         slidesToShow: 5,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
       },
     },
     {
@@ -46,3 +46,35 @@ images.forEach((image) => {
     mainImage.src=image.src;
   });
 });
+
+
+
+const descriptionSectionBtn=document.querySelector(".descriptionSectionBtn")
+const reviewsSectionBtn=document.querySelector(".reviewsSectionBtn")
+
+
+const descriptionSection=document.querySelector(".descriptionSection")
+const reviewsSection=document.querySelector(".reviewsSection")
+
+
+descriptionSectionBtn.addEventListener('click',(e)=>{
+  e.preventDefault();
+
+  descriptionSectionBtn.classList.add("active")
+  descriptionSection.classList.add('active')
+
+  reviewsSection.classList.remove('active')
+  reviewsSectionBtn.classList.remove('active')
+})
+
+
+
+reviewsSectionBtn.addEventListener('click',(e)=>{
+  e.preventDefault();
+
+  descriptionSectionBtn.classList.remove("active")
+  descriptionSection.classList.remove('active')
+
+  reviewsSection.classList.add('active')
+  reviewsSectionBtn.classList.add('active')
+})
