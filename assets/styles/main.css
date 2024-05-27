@@ -9,6 +9,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   font-family: "Poppins", sans-serif;
 }
@@ -1681,7 +1682,7 @@ footer #Footer-main .container .footer-bottom ul li a {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .shop .content .container .menu-list .menu-list-right .products-list li:hover {
   border: 4px solid #c93;
@@ -2667,13 +2668,13 @@ footer #Footer-main .container .footer-bottom ul li a {
     max-width: 100%;
     background: transparent;
   }
-  .bannerTitle {
-    font-size: 90px;
+  h1 {
+    font-size: 100px;
   }
 }
 @media (max-width: 576px) {
-  .bannerTitle {
-    font-size: 45px !important;
+  h1 {
+    font-size: 70px !important;
     margin: 20px 0 10px !important;
   }
 }
@@ -3043,10 +3044,6 @@ footer #Footer-main .container .footer-bottom ul li a {
 }
 
 @media (max-width: 576px) {
-  #News-banner .banner-part h1 {
-    font-size: 46px !important;
-    line-height: 50px !important;
-  }
   .container .row {
     padding: 0 10px;
   }
@@ -3066,74 +3063,6 @@ footer #Footer-main .container .footer-bottom ul li a {
 
 .login {
   background-color: #efefef !important;
-}
-.login #News-banner {
-  height: 500px;
-}
-.login #News-banner .banner-part {
-  min-height: 500px;
-  position: relative;
-  background-image: url(/assets/images/home/product-img1.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  background-attachment: scroll;
-}
-.login #News-banner .banner-part .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0.5;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  /* Adjust alpha to control darkness */
-}
-.login #News-banner .banner-part .banner-content {
-  z-index: 100;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.login #News-banner .banner-part .banner-content h3 {
-  color: #cc9933;
-  font-size: 18px;
-  line-height: 28px;
-  font-weight: 600;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  text-align: center;
-}
-.login #News-banner .banner-part .banner-content .bannerTitle {
-  font-family: "Great Vibes";
-  margin: 20px 0px 40px 0px;
-  font-size: 128px;
-  line-height: 86px;
-  font-weight: 400;
-  text-align: center;
-  color: white;
-}
-.login #News-banner .banner-part .banner-content .connection {
-  font-family: "Playfair Display", serif;
-  font-size: 24px;
-  line-height: 24px;
-  color: #999;
-  margin-bottom: 15px;
-  font-weight: 400;
-  letter-spacing: 2px;
-  text-align: center;
-  word-break: keep-all !important;
-}
-.login #News-banner .banner-part .banner-content .connection span {
-  color: #fff;
-}
-.login #News-banner .banner-part .banner-content .yellow {
-  color: #cc9933;
-  font-size: 24px;
-  line-height: 34px;
-  letter-spacing: 2px;
-  text-align: center;
 }
 .login .content {
   padding: 90px 0 140px;
@@ -3702,7 +3631,6 @@ footer #Footer-main .container .footer-bottom ul li a {
 }
 @media (max-width: 576px) {
   .bannerTitle {
-    font-size: 45px !important;
     margin: 20px 0 10px !important;
   }
 }
@@ -4348,7 +4276,6 @@ footer #Footer-main .container .footer-bottom ul li a {
 }
 @media (max-width: 576px) {
   .bannerTitle {
-    font-size: 45px !important;
     margin: 20px 0 10px !important;
   }
 }
@@ -4640,4 +4567,11 @@ footer #Footer-main .container .footer-bottom ul li a {
     gap: 20px !important;
     padding: 0 !important;
   }
+}
+* {
+  box-sizing: border-box;
+}
+
+.order {
+  background-color: #efefef !important;
 }/*# sourceMappingURL=main.css.map */
