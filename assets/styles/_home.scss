@@ -8,6 +8,7 @@
 }
 
 main {
+  background-color: #efefef;
   #Home-banner {
     background-attachment: fixed;
 
@@ -168,7 +169,7 @@ main {
   }
 
   #Menu {
-    background-color: #16191e;
+    background-color: white;
     position: relative;
 
     .container {
@@ -555,7 +556,7 @@ main {
             }
 
             li {
-              border: 1.5px solid #fff;
+              border: 1.5px solid #efefef;
 
               position: relative;
               text-align: center;
@@ -565,6 +566,7 @@ main {
               display: flex;
               align-items: center;
               justify-content: center;
+              background:white;
 
               img {
                 //position: absolute;
@@ -716,9 +718,10 @@ main {
 
   #Reservation {
     .row {
+      
       .reservation-block {
         width: 100%;
-        padding: 0px 155px;
+        padding: 0px ;
         position: relative !important;
         min-height: 745px;
         display: flex;
@@ -902,6 +905,7 @@ main {
   }
 
   #Reservation {
-    display: none;
+    // display: none;
+    // text-align: center;
   }
 }

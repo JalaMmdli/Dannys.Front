@@ -92,24 +92,30 @@
   padding-left: 10px;
 }
 #News .container .row .left-part .all-news {
-  overflow-y: auto;
   margin-left: -20px;
   margin-right: -20px;
+  gap: 40px;
+  align-items: center;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
 }
-#News .container .row .left-part .all-news .article {
-  float: left;
-  padding-bottom: 20px;
+#News .container .row .left-part .all-news .left-news, #News .container .row .left-part .all-news .right-news {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+#News .container .row .left-part .all-news .left-news .article, #News .container .row .left-part .all-news .right-news .article {
+  width: 100%;
+  height: 100%;
   overflow: hidden;
   border-bottom: 2px solid #dfe1dc;
   text-align: center;
   margin: 5px;
 }
-#News .container .row .left-part .all-news .article .article-header {
-  margin-bottom: 25px;
+#News .container .row .left-part .all-news .left-news .article .article-header, #News .container .row .left-part .all-news .right-news .article .article-header {
+  margin-bottom: 15px;
 }
-#News .container .row .left-part .all-news .article .article-header h2 {
+#News .container .row .left-part .all-news .left-news .article .article-header h2, #News .container .row .left-part .all-news .right-news .article .article-header h2 {
   font-family: "Poppins", sans-serif;
   font-size: 34px;
   line-height: 44px;
@@ -118,17 +124,17 @@
   margin-bottom: 0.3em;
   text-transform: uppercase;
 }
-#News .container .row .left-part .all-news .article .article-header h2 a {
+#News .container .row .left-part .all-news .left-news .article .article-header h2 a, #News .container .row .left-part .all-news .right-news .article .article-header h2 a {
   color: #000;
   text-decoration: none;
 }
-#News .container .row .left-part .all-news .article .article-header .header-bottom {
+#News .container .row .left-part .all-news .left-news .article .article-header .header-bottom, #News .container .row .left-part .all-news .right-news .article .article-header .header-bottom {
   font-size: 10px;
   margin-bottom: 2.5em;
   letter-spacing: 1px;
   color: #999999;
 }
-#News .container .row .left-part .all-news .article .article-header .header-bottom p {
+#News .container .row .left-part .all-news .left-news .article .article-header .header-bottom p, #News .container .row .left-part .all-news .right-news .article .article-header .header-bottom p {
   margin-bottom: 10px;
   font-size: 10px;
   line-height: 10px;
@@ -138,22 +144,89 @@
   font-family: "Open Sans", sans-serif;
   margin: 0;
 }
-#News .container .row .left-part .all-news .article .article-header .header-bottom p a {
+#News .container .row .left-part .all-news .left-news .article .article-header .header-bottom p a, #News .container .row .left-part .all-news .right-news .article .article-header .header-bottom p a {
   color: #000;
   text-decoration: none;
 }
-#News .container .row .left-part .all-news .article .article-img {
+#News .container .row .left-part .all-news .left-news .article .article-img, #News .container .row .left-part .all-news .right-news .article .article-img {
   margin-bottom: 25px;
 }
-#News .container .row .left-part .all-news .article .article-img img {
+#News .container .row .left-part .all-news .left-news .article .article-img img, #News .container .row .left-part .all-news .right-news .article .article-img img {
   display: block;
   max-width: 100%;
   height: auto;
 }
-#News .container .row .left-part .all-news .article .article-content {
+#News .container .row .left-part .all-news .left-news .article .article-content, #News .container .row .left-part .all-news .right-news .article .article-content {
   font-size: 14px;
 }
-#News .container .row .left-part .all-news .article .article-content p {
+#News .container .row .left-part .all-news .left-news .article .article-content p, #News .container .row .left-part .all-news .right-news .article .article-content p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  color: #333;
+  margin-bottom: 10px;
+}
+#News .container .row .left-part .full-width {
+  grid-column: span 2;
+}
+#News .container .row .left-part .article {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-self: stretch; /* Ensure articles align to the start */
+  overflow: hidden;
+  border-bottom: 2px solid #dfe1dc;
+  text-align: center;
+  margin: 5px;
+}
+#News .container .row .left-part .article-header {
+  margin-bottom: 25px;
+}
+#News .container .row .left-part .article-header h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 34px;
+  line-height: 44px;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0.3em;
+  text-transform: uppercase;
+}
+#News .container .row .left-part .article-header h2 a {
+  color: #000;
+  text-decoration: none;
+}
+#News .container .row .left-part .header-bottom {
+  font-size: 10px;
+  margin-bottom: 2.5em;
+  letter-spacing: 1px;
+  color: #999999;
+}
+#News .container .row .left-part .header-bottom p {
+  margin-bottom: 10px;
+  font-size: 10px;
+  line-height: 10px;
+  color: #999999;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+#News .container .row .left-part .header-bottom p a {
+  color: #000;
+  text-decoration: none;
+}
+#News .container .row .left-part .article-img {
+  margin-bottom: 25px;
+}
+#News .container .row .left-part .article-img img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+#News .container .row .left-part .article-content {
+  font-size: 14px;
+}
+#News .container .row .left-part .article-content p {
   font-weight: 300;
   font-size: 14px;
   line-height: 22px;
@@ -351,6 +424,17 @@
   text-decoration: none;
 }
 
+@media (max-width: 576px) {
+  .container .row {
+    display: block;
+  }
+  .container .row .left-part .all-news {
+    flex-direction: column;
+  }
+  .container .row .col-sm-4 {
+    width: 100% !important;
+  }
+}
 #News-detail {
   padding: 10px 0px;
   background-color: #efefef;
@@ -1259,6 +1343,9 @@ footer #Footer-main .container .footer-bottom ul li a {
   padding: 0px !important;
 }
 
+main {
+  background-color: #efefef;
+}
 main #Home-banner {
   background-attachment: fixed;
 }
@@ -1391,7 +1478,7 @@ main #Restaurant .container .row .part .right-part a {
   text-decoration: none !important;
 }
 main #Menu {
-  background-color: #16191e;
+  background-color: white;
   position: relative;
 }
 main #Menu .container {
@@ -1719,7 +1806,7 @@ main #Menu-list .container .row .menu-list-right .products-list li:hover .info-w
   text-align: center;
 }
 main #Menu-list .container .row .menu-list-right .products-list li {
-  border: 1.5px solid #fff;
+  border: 1.5px solid #efefef;
   position: relative;
   text-align: center;
   overflow: hidden;
@@ -1728,6 +1815,7 @@ main #Menu-list .container .row .menu-list-right .products-list li {
   display: flex;
   align-items: center;
   justify-content: center;
+  background: white;
 }
 main #Menu-list .container .row .menu-list-right .products-list li img {
   width: 100%;
@@ -1845,7 +1933,7 @@ main #Testimonial .container .row .testimonial-slider .slider-item h4 {
 }
 main #Reservation .row .reservation-block {
   width: 100%;
-  padding: 0px 155px;
+  padding: 0px;
   position: relative !important;
   min-height: 745px;
   display: flex;
@@ -1973,9 +2061,6 @@ main #Reservation .row .reservation-block .detail-block a {
   main #Menu-list .container .menu-list-right .products-list li {
     display: block !important;
     width: 100% !important;
-  }
-  #Reservation {
-    display: none;
   }
 }
 .menu #Menu-banner {
