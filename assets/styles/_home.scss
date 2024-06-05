@@ -7,7 +7,7 @@
   }
 }
 
-main {
+.home {
   background-color: #efefef;
   #Home-banner {
     background-attachment: fixed;
@@ -169,8 +169,8 @@ main {
   }
 
   #Menu {
-    background-color: white;
-    position: relative;
+    background-color: #16191e;
+        position: relative;
 
     .container {
       width: 1370px;
@@ -843,6 +843,7 @@ main {
     #Restaurant {
       .container {
         width: 100%;
+
 
         .row {
           padding: 0px;
