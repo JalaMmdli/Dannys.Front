@@ -5305,8 +5305,75 @@ footer #Footer-main .container .footer-bottom ul li a {
 .order {
   background-color: #efefef !important;
 }
+.order #News-banner {
+  height: 500px;
+}
+.order #News-banner .banner-part {
+  min-height: 500px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: scroll;
+}
+.order #News-banner .banner-part .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Adjust alpha to control darkness */
+}
+.order #News-banner .banner-part .banner-content {
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.order #News-banner .banner-part .banner-content h3 {
+  color: #cc9933;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.order #News-banner .banner-part .banner-content .bannerTitle {
+  font-family: "Great Vibes";
+  margin: 40px 0px 40px 0px;
+  font-size: 128px;
+  line-height: 86px;
+  font-weight: 400;
+  text-align: center;
+  color: white;
+}
+.order #News-banner .banner-part .banner-content .connection {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  line-height: 24px;
+  color: #999;
+  margin-bottom: 15px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-align: center;
+  word-break: keep-all !important;
+}
+.order #News-banner .banner-part .banner-content .connection span {
+  color: #fff;
+}
+.order #News-banner .banner-part .banner-content .yellow {
+  color: #cc9933;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: 2px;
+  text-align: center;
+}
 .order .content {
-  padding: 100px 0;
+  padding: 150px 0 100px;
 }
 .order .content .accordion {
   display: flex;
